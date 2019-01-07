@@ -3,6 +3,7 @@ package com.kitchen.graph;
 import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class Graph {
     private final int vertex;
@@ -42,6 +43,18 @@ public class Graph {
             visit(vertice);
             LinkedList<Integer> adjacencyList = adjacencyLists[vertice];
             adjacencyList.forEach(queue::add);
+        }
+    }
+
+    public void dfsTraversal(int source){
+        Stack<Integer> stack = new Stack<>();
+        stack.push(source);
+        while(!stack.isEmpty()){
+            Integer vertice = stack.pop();
+            visit(vertice);
+            LinkedList<Integer> adjacencyList = adjacencyLists[vertice];
+            adjacencyList.forEach(stack::push);
+
         }
     }
 
