@@ -1,4 +1,4 @@
-package com.futurejob.test.binarytree;
+package com.kitchen.binarytree;
 
 public class DecodeHoffman {
 

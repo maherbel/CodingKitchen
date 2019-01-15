@@ -1,4 +1,6 @@
-package com.futurejob.test.binarytree;
+package com.kitchen.binarytree;
+
+import com.kitchen.datastructures.TreeNode;
 
 import java.io.IOException;
 import java.util.LinkedList;
@@ -17,13 +19,6 @@ public class BinaryTreeTilt {
             System.out.print(out);
     }
 
-    public static class TreeNode {
-         int val;
-         TreeNode left;
-         TreeNode right;
-         TreeNode(int x) { val = x; }
-     }
-
     static class Solution {
         public int findTilt(TreeNode root) {
             if (root == null){
@@ -31,8 +26,8 @@ public class BinaryTreeTilt {
             }
             TreeNode leftChild = root.left;
             TreeNode rightChild = root.right;
-            int currentTilt = (rightChild == null ? 0 : rightChild.val) -
-                    (leftChild == null ? 0 : leftChild.val);
+            int currentTilt = (rightChild == null ? 0 : rightChild.data) -
+                    (leftChild == null ? 0 : leftChild.data);
 
             return Math.abs(currentTilt) + (findTilt(rightChild) + findTilt(leftChild));
         }

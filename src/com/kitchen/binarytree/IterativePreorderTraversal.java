@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class IterativeInorderTraversal {
+public class IterativePreorderTraversal {
+
     public static void main(String[] args) {
         TreeNode root = new TreeNode(15);
 
@@ -19,29 +20,27 @@ public class IterativeInorderTraversal {
         root.right.right = new TreeNode(35);
         root.right.left = new TreeNode(20);
 
-        List<Integer> datas = iterativeInorderTraversal(root);
+        List<Integer> datas = iterativePreorderTraversal(root);
         for(Integer data : datas){
             System.out.print(" " + data);
         }
     }
 
-    private static List<Integer> iterativeInorderTraversal(TreeNode root) {
-        if (root == null){
-            return new ArrayList<>();
-        }
-        List<Integer> datas = new ArrayList<>();
+    private static List<Integer> iterativePreorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
         TreeNode p = root;
-        while (p != null || !stack.isEmpty()){
-            while (p != null){
+
+        while(p != null || !stack.isEmpty()){
+            while(p != null){
                 stack.push(p);
+                res.add(p.data); // Add the value before going to the children
                 p = p.left;
             }
             p = stack.pop();
-            datas.add(p.data); // adding the value after all left children are treated
-                               // the while p!=null will be false when we dont have any false no more
             p = p.right;
         }
-        return datas;
+
+        return res;
     }
 }
