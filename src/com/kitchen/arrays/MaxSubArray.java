@@ -3,6 +3,11 @@ package com.kitchen.arrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * Given an Array of Integers
+ * return the maximum sub array
+ */
+
 public class MaxSubArray {
 
     public static void main(String[] args) {

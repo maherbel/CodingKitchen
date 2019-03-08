@@ -1,5 +1,10 @@
 package com.kitchen.arrays;
 
+/**
+ * Given a String
+ * Insert stars when there is a recurrent adjacent characters
+ */
+
 public class InsertStars {
     public static void main(String[] args) {
 

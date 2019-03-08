@@ -21,16 +21,11 @@ public class IterativePostorderTraversal {
         root.right.left = new TreeNode(20);
 
         List<Integer> datas = postorderTraversalTwoStack(root);
-        for(Integer data : datas){
+        for (Integer data : datas) {
             System.out.print(" " + data);
         }
 
         System.out.println();
-
-        List<Integer> datas2 = postorderTraversalOneStack(root);
-        for(Integer data : datas2){
-            System.out.print(" " + data);
-        }
     }
 
     public static ArrayList<Integer> postorderTraversalTwoStack(TreeNode A) {
@@ -41,39 +36,17 @@ public class IterativePostorderTraversal {
         Stack<TreeNode> reverseStack = new Stack<TreeNode>();
         ArrayList<Integer> result = new ArrayList<Integer>();
 
-        while (!stack.isEmpty()){
+        while (!stack.isEmpty()) {
             reverseStack.push(stack.pop());
             if (reverseStack.peek().left != null) stack.push(reverseStack.peek().left);
             if (reverseStack.peek().right != null) stack.push(reverseStack.peek().right);
         }
 
-        while (!reverseStack.isEmpty()){
+        while (!reverseStack.isEmpty()) {
             result.add(reverseStack.pop().data);
         }
         return result;
     }
 
-    public static ArrayList<Integer> postorderTraversalOneStack(TreeNode A) {
-        TreeNode curr = A;
-        if (curr == null) return null;
-
-        Stack<TreeNode> stack = new Stack<>();
-        ArrayList<Integer> result = new ArrayList<Integer>();
-
-        while (curr != null || !stack.isEmpty()){
-            if (curr != null){
-                stack.push(curr);
-                curr = curr.left;
-            } else {
-                TreeNode temp = stack.peek().right;
-                if (temp != null){
-                    curr = temp;
-                } else {
-
-                }
-            }
-        }
-
-        return result;
-    }
 }
+

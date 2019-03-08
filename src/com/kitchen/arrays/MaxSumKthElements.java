@@ -1,5 +1,10 @@
 package com.kitchen.arrays;
 
+/**
+ * given an array of integer
+ * return the max sum of k adjacent elements
+ */
+
 public class MaxSumKthElements {
     public static void main(String[] args) {
         int[] array =  {100, 200, 300, 100, 400, 50, 600, 150};

@@ -2,6 +2,11 @@ package com.kitchen.arrays;
 
 import com.kitchen.datastructures.DoublyListNode;
 
+/**
+ * Given a DoublyLinkedList
+ * Insert an element at a position k
+ */
+
 public class InsertAtPositionDoubleLinkyList {
 
     public static void main(String[] args) {

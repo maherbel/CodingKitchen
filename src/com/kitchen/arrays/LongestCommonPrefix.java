@@ -2,6 +2,11 @@ package com.kitchen.arrays;
 
 import java.util.ArrayList;
 
+/**
+ * Given a String
+ * return the longest common prefix (LCP)
+ */
+
 public class LongestCommonPrefix {
     public static void main(String[] args) {
         String[] strs = {"flower","flow","flight"};
