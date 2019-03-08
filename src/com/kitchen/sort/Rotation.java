@@ -1,8 +1,8 @@
-package com.futurejob.test.sort;
+package com.kitchen.sort;
 
 public class Rotation {
     public static void main(String[] args) {
-        int[] nums = {1,2,4,5,6,7,0};
+        int[] nums = {4,5,6,7,0,1,2};
         int target = 0;
         System.out.println("Result : "+ search(nums, target));
     }
