@@ -12,3 +12,7 @@ You'll be able to find multiple categories under the source package :
 - Numbers
 - Sorting
 - Strings
+
+Current work :
+- documentation of each algorithm (In Progress)
+- addition of new algorithms (mostly DP, Graphs and String manipulation)
