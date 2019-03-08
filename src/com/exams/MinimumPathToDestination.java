@@ -3,6 +3,14 @@ package com.exams;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * Having a 2D matrix
+ * Find the minimum number of steps to a destinations
+ * A cell with value 1 can be traversed
+ * A cell with value 0 cannot be traversed
+ * The destination is the cell with value 9
+ */
+
 public class MinimumPathToDestination {
 
     public static void main(String[] args) {

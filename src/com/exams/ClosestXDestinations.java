@@ -2,6 +2,11 @@ package com.exams;
 
 import java.util.*;
 
+/**
+ * Given A number of destinations (List of List of Integer)
+ * Find all the k closest deliveries starting from an intial state (represented by coordonates 0,0 on a matrix)
+ */
+
 public class ClosestXDestinations {
     public static void main(String[] args) {
 
