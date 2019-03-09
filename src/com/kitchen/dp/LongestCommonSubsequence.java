@@ -1,5 +1,10 @@
 package com.kitchen.dp;
 
+/**
+ * Fiven two array of integers
+ * return the longest common subsequence
+ */
+
 public class LongestCommonSubsequence {
 
     public static void main(String[] args) {

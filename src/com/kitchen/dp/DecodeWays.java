@@ -3,6 +3,14 @@ package com.kitchen.dp;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Given a number
+ * return the number of possible ways to decode it into string
+ * supposing each number can be considered an asci code
+ * exemple for 10 it can be 1 and 0 so AB and also 10 so J
+ * so result for 10 is 2
+ */
+
 public class DecodeWays {
 
     public static void main(String[] args) {

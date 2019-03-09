@@ -3,10 +3,10 @@ package com.kitchen.arrays;
 public class ReverseWord {
 
     // The idea here would be to iterate using two pointers
-// One from the start (index 0) and one from the end (index size of array minus 1)
-// We will switch the elements at theses two indexes and the increment/decrement them
-// we repeat the operation until the two pointers have crossed
-// Important note : this algorithm should be applied on each word meaning each subarray that does not contain empty space
+    // One from the start (index 0) and one from the end (index size of array minus 1)
+    // We will switch the elements at theses two indexes and the increment/decrement them
+    // we repeat the operation until the two pointers have crossed
+    // Important note : this algorithm should be applied on each word meaning each subarray that does not contain empty space
 
     public static char[] reverseWords(char[] input){
         if (input == null || input.length <= 1) return input;

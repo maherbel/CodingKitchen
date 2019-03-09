@@ -1,5 +1,11 @@
 package com.kitchen.backtracking;
 
+/**
+ * Given an word and a matrix of characters
+ * search if the word exists
+ * you can reuse the same letter backward
+ */
+
 public class WordSearch {
     public static void main(String[] args) {
         String input  = "ABCCED";

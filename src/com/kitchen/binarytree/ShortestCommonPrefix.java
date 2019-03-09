@@ -6,6 +6,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Given a list of strings (words)
+ * find the shortest common prefix of all these words
+ */
+
 public class ShortestCommonPrefix {
 
     public static void main(String[] args) {
